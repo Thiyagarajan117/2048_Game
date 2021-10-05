@@ -7,6 +7,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 class Game2048 extends JPanel {
+  
+  //defining static and instance variables
+  
   private static final Color BG_COLOR = new Color(0xbbada0);
   private static final String FONT_NAME = "Arial";
   private static final int TILE_SIZE = 64;
@@ -17,6 +20,8 @@ class Game2048 extends JPanel {
   boolean myLose = false;
   int myScore = 0;                
 
+  //Game2048 class starts
+  
   public Game2048() {
     setPreferredSize(new Dimension(340, 400));
     setFocusable(true);
