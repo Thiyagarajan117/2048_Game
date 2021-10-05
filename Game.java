@@ -19,10 +19,8 @@ class Game2048 extends JPanel {
   boolean myWin = false;
   boolean myLose = false;
   int myScore = 0;                
-
-  //Game2048 class starts
   
-  public Game2048() {
+  public Game2048() {                                  //Game2048 class starts
     setPreferredSize(new Dimension(340, 400));
     setFocusable(true);
     addKeyListener(new KeyAdapter() {
