@@ -71,7 +71,7 @@ class Game2048 extends JPanel {
     addTile();
   }
 
-  public void left() {
+  public void left() {                               
     boolean needAddTile = false;
     for (int i = 0; i < 4; i++) {
       Tile[] line = getLine(i);
@@ -325,7 +325,7 @@ class Game2048 extends JPanel {
       return value < 16 ? new Color(0x776e65) :  new Color(0xf9f6f2);
     }
 
-    public Color getBackground() {
+    public Color getBackground() {                //defining different colors for each cases of titles
       switch (value) {
         case 2:    return new Color(0xeee4da);
         case 4:    return new Color(0xede0c8);
