@@ -30,11 +30,11 @@ class Game2048 extends JPanel {
         if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
           resetGame();
         }
-        if (!canMove()) {
+        if (!canMove()) {               //If all tiles are blocked, we need to exit from the game
           myLose = true;
         }
 
-        if (!myWin && !myLose) {
+        if (!myWin && !myLose) {        //Different operations to move (left,right,up,down)
           switch (e.getKeyCode()) {
             case KeyEvent.VK_LEFT:
               left();
@@ -61,7 +61,7 @@ class Game2048 extends JPanel {
     resetGame();
   }
 
-  public void resetGame() {
+  public void resetGame() {       //to reset the game if player loses or wins
     myScore = 0;
     myWin = false;
     myLose = false;
